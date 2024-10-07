@@ -1,0 +1,197 @@
+/* Generals */
+
+/* Custum properties */
+:root{
+    --bg-light: #F6F6F6;
+    --bg-dark: #23272a;
+    --bg-blue: #255EE9;
+    --contrast-color: #748ADB;
+}
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug{
+    border: 1px solid red;
+}
+
+/* formattazione testo*/
+.t-color-white{
+    color: white;
+}
+
+.t-color-black{
+    color: white;
+}
+
+body{
+    font-family: 'Whitney', Helvetica, Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Utility flex*/
+.d-flex{
+    display: flex;
+}
+
+.j-space-between{
+    justify-content: space-between;
+}
+
+.j-center{
+    justify-content: center;
+}
+
+.a-center{
+    align-items: center;
+}
+
+.f-column{
+    flex-direction: column;
+}
+
+.f-row{
+    flex-direction: row;
+}
+
+.r-reverse{
+    flex-direction: row-reverse;
+}
+
+.f-wrap{
+    flex-wrap: wrap;
+}
+
+/* Containers */
+.container{
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.small-container{
+    width: 60%;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* bottoni */
+.button{
+
+}
+
+.b-dark{
+
+}
+
+.b-light{
+
+}
+
+.b-purple{
+
+}
+
+/* --- Headrer --- */
+header{
+    height: 50px;
+    background-color: var(--bg-blue);
+}
+
+#header-list > div{
+    padding: 0 20px 0 20px;
+}
+
+/* --- Main --- */
+#hero{
+    height: 650px;
+    text-align: center;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+}
+
+h1{
+    padding: 0 0 4% 0;
+}
+
+#hero p{
+    padding: 0 0 2% 0;
+}
+
+#hero a{
+    padding: 0 0 4% 0;
+    margin: 0 20px 0 20px;
+    
+}
+
+#place{
+}
+
+#meet{
+}
+
+#comunity{
+}
+
+#tecnology{
+    text-align: center;
+}
+
+#call-to-action{
+}
+
+.image{
+    width: 60%;
+}
+
+.content{
+    width: 40%;
+}
+
+p{
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* --- Footer --- */
+footer{
+    background-color: var(--bg-dark);
+    line-height: 2;
+}
+
+#top-footer{
+    margin-top: 8%;
+}
+
+#top-footer > div{
+    width: 18%;
+}
+
+footer h3{
+    color: var(--contrast-color);
+}
+
+h4{
+    color: var(--contrast-color);
+}
+
+.flag{
+    height: 16px;
+}
+
+#bottom-footer{
+    margin: 4% 0 4% 0;
+    padding: 1% 0 1% 0;
+    border-top: 1px solid var(--contrast-color);
+}
+
+footer ul{
+    list-style: none;
+}
