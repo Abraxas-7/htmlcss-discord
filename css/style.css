@@ -1,4 +1,7 @@
 /* Generals */
+html {
+    scroll-behavior: smooth;
+  }
 
 /* Custum properties */
 :root{
@@ -94,6 +97,13 @@ a{
     border-radius: 50px;
 }
 
+.big-button:hover{
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.small-button:hover{
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+}
 
 .b-dark{
     background-color: var(--bg-dark);
@@ -118,6 +128,11 @@ header{
     padding: 0 20px 0 20px;
 }
 
+#header-list > div:hover{
+    text-decoration: underline;
+}
+
+
 /* --- Main --- */
 #hero{
     height: 650px;
@@ -138,7 +153,6 @@ h1{
 
 #hero a{
         margin: 0 20px 0 20px;
-    
 }
 
 #place{
@@ -246,6 +260,14 @@ footer h3{
 
 footer ul{
     list-style: none;
+}
+
+footer li:hover{
+    text-decoration: underline;
+}
+
+footer li:first-child:hover{
+    text-decoration: none
 }
 
 h4{
