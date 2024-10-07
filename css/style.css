@@ -15,9 +15,9 @@
     box-sizing: border-box;
 }
 
-.debug{
+/* .debug{
     border: 1px solid red;
-}
+} */
 
 /* formattazione testo*/
 .t-color-white{
@@ -25,7 +25,7 @@
 }
 
 .t-color-black{
-    color: white;
+    color: black
 }
 
 body{
@@ -83,25 +83,34 @@ a{
 }
 
 /* bottoni */
-.button{
-
+.big-button{
+    padding: 14px 22px;
+    border-radius: 50px;
+    font-size: 22px;
 }
 
-.b-dark{
+.small-button{
+    padding: 6px 14px;
+    border-radius: 50px;
+}
 
+
+.b-dark{
+    background-color: var(--bg-dark);
 }
 
 .b-light{
-
+    background-color: white;
 }
 
 .b-purple{
-
+    background-color: var(--contrast-color);
 }
+
 
 /* --- Headrer --- */
 header{
-    height: 50px;
+    height: 60px;
     background-color: var(--bg-blue);
 }
 
@@ -119,51 +128,106 @@ header{
 
 h1{
     padding: 0 0 4% 0;
+    font-size: 3.8em;
 }
 
 #hero p{
-    padding: 0 0 2% 0;
+    padding: 0 0 5% 0;
+    font-size: 22px;
 }
 
 #hero a{
-    padding: 0 0 4% 0;
-    margin: 0 20px 0 20px;
+        margin: 0 20px 0 20px;
     
 }
 
 #place{
+    padding: 8% 0 5% 0;
 }
 
 #meet{
+    background-color: var(--bg-light);
+    padding: 5% 0;
 }
 
 #comunity{
+    padding: 5% 0;
 }
 
 #tecnology{
+    padding: 5% 0;
     text-align: center;
+    background-color: var(--bg-light);
+}
+
+#tecnology .image{
+    width: 100%;
+    max-width: 100%;
+}
+
+#tecnology .content{
+    width: 100%;
 }
 
 #call-to-action{
+    padding: 5% 0;
+    background-color: var(--bg-light);
+}
+
+.star-bg{
+    background-image: url(../img/stars.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid blue;
+    
+}
+
+svg{
+    opacity: 0.03;
+
+}
+
+h2{
+    font-size: 3.5em;
+    padding-bottom: 28px;
+}
+
+h3{
+    font-size: 1.8em;
+    padding-bottom: 5%;
+}
+
+p{
+    font-size: 1.4em;
+    line-height: 1.5;
+}
+
+.stars{
+    transform: translateY(18px);
+}
+
+.trsl{
+    transform: translateY(3px);
+}
+
+.updown{
+    transform: scale(1, -1)
 }
 
 .image{
     width: 60%;
+    max-width: 100%;
 }
 
 .content{
     width: 40%;
 }
 
-p{
-    font-size: 20px;
-    line-height: 1.6;
-}
-
 /* --- Footer --- */
 footer{
     background-color: var(--bg-dark);
     line-height: 2;
+    color: white;
 }
 
 #top-footer{
@@ -171,11 +235,18 @@ footer{
 }
 
 #top-footer > div{
-    width: 18%;
+    width: 17%;
 }
 
 footer h3{
     color: var(--contrast-color);
+    font-size: 28px;
+    line-height: 1;
+    padding-bottom: 14px;
+}
+
+footer ul{
+    list-style: none;
 }
 
 h4{
@@ -185,13 +256,13 @@ h4{
 .flag{
     height: 16px;
 }
+.social{
+    padding-right: 8%;
+}
 
 #bottom-footer{
-    margin: 4% 0 4% 0;
+    margin: 4% 0 0 0;
     padding: 1% 0 1% 0;
     border-top: 1px solid var(--contrast-color);
 }
 
-footer ul{
-    list-style: none;
-}
