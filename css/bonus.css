@@ -1,16 +1,3 @@
-/* Generals */
-html {
-    scroll-behavior: smooth;
-  }
-
-/* Custum properties */
-:root{
-    --bg-light: #F6F6F6;
-    --bg-dark: #23272a;
-    --bg-blue: #255EE9;
-    --contrast-color: #748ADB;
-}
-
 /* Reset */
 *{
     margin: 0;
@@ -18,25 +5,25 @@ html {
     box-sizing: border-box;
 }
 
-/* .debug{
-    border: 1px solid red;
-} */
-
-/* formattazione testo*/
-.t-color-white{
-    color: white;
-}
-
-.t-color-black{
-    color: black
+:root{
+    --bg-light: #F6F6F6;
+    --bg-dark: #23272a;
+    --bg-blue: #255EE9;
+    --contrast-color: #748ADB;
 }
 
 body{
     font-family: 'Whitney', Helvetica, Arial, sans-serif;
 }
 
+p{
+    color: gray;
+    line-height: 1.5em;
+}
+
 a{
     text-decoration: none;
+    color: var(--contrast-color);
 }
 
 /* Utility flex*/
@@ -72,17 +59,17 @@ a{
     flex-wrap: wrap;
 }
 
-/* Containers */
+/*containes*/
 .container{
-    width: 80%;
+    width: 60%;
     max-width: 1200px;
     margin: auto;
 }
 
 .small-container{
-    width: 60%;
+    width: 40%;
     max-width: 900px;
-    margin: auto;
+    margin: 100px auto;
 }
 
 /* bottoni */
@@ -121,119 +108,16 @@ a{
 /* --- Headrer --- */
 header{
     height: 60px;
-    background-color: var(--bg-blue);
+    background-color: var(--bg-dark);
 }
 
 #header-list > div{
     padding: 0 20px 0 20px;
+    color: white;
 }
 
 #header-list > div:hover{
     text-decoration: underline;
-}
-
-
-/* --- Main --- */
-#hero{
-    height: 650px;
-    text-align: center;
-    background-image: url(../img/jumbo.png);
-    background-size: cover;
-}
-
-h1{
-    padding: 0 0 4% 0;
-    font-size: 3.8em;
-}
-
-#hero p{
-    padding: 0 0 5% 0;
-    font-size: 22px;
-}
-
-#hero a{
-        margin: 0 20px 0 20px;
-}
-
-#place{
-    padding: 8% 0 5% 0;
-}
-
-#meet{
-    background-color: var(--bg-light);
-    padding: 5% 0;
-}
-
-#comunity{
-    padding: 5% 0;
-}
-
-#tecnology{
-    padding: 5% 0;
-    text-align: center;
-    background-color: var(--bg-light);
-}
-
-#tecnology .image{
-    width: 100%;
-    max-width: 100%;
-}
-
-#tecnology .content{
-    width: 100%;
-}
-
-#call-to-action{
-    padding: 5% 0;
-    background-color: var(--bg-light);
-}
-
-.star-bg{
-    background-image: url(../img/stars.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 1px solid blue;
-    
-}
-
-svg{
-    opacity: 0.03;
-}
-
-h2{
-    font-size: 3.5em;
-    padding-bottom: 28px;
-}
-
-h3{
-    font-size: 1.8em;
-    padding-bottom: 5%;
-}
-
-p{
-    font-size: 1.4em;
-    line-height: 1.5;
-}
-
-.stars{
-    transform: translateY(18px);
-}
-
-.trsl{
-    transform: translateY(3px);
-}
-
-.updown{
-    transform: scale(1, -1)
-}
-
-.image{
-    width: 60%;
-    max-width: 100%;
-}
-
-.content{
-    width: 40%;
 }
 
 /* --- Footer --- */
